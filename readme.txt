@@ -1,7 +1,7 @@
 === CBX Flexible Countdown ===
 Contributors: codeboxr, manchumahara
 Donate link: http://codeboxr.com
-Tags: countdown, event, launch
+Tags: countdown, event, launch, countdown
 Requires at least: 3.5
 Tested up to: 4.1
 Stable tag: 1.6.3
