@@ -14,8 +14,43 @@ Codeboxr Flexible Event Countdown
 
 This plugin shows countdown for event, launch date using various display method.
 
+= Three Countdown Styles =
+* Light (Step Countdonwn).
+* Circular Countdown
+* KK(Text Based)
 
-Features:
+= Integration =
+* Widget
+* Shortcode
+* Custom Function call
+
+= Flexible Options =
+* Event Start Date
+* Event Start Hour
+* Event Start Minute
+* Count Number Color (On Responsive)
+
+= Light Countdown Specific Option =
+* Text Color (On Responsive)
+* Event Start Minute
+
+= Circular Countdown Specific Option =
+* Background Color
+* Count Number And Text Color
+* Text Color (On Responsive)
+* Seconds Border Color
+* Minutes Border Color
+* Hours Border Color
+* Days Border Color
+
+= KK Countdown Specific Option =
+
+* Countdown Font Size
+* Countdown Number Color
+* Countdown Text Color
+
+
+= More Features =
 
 *   Can set date
 *   Can set hours
