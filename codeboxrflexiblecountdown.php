@@ -10,7 +10,7 @@
  * Plugin Name:         CBX Flexible CountDown
  * Plugin URI:          http://codeboxr.com/
  * Description:         An event countdown plugin
- * Version:             1.6.3
+ * Version:             1.6.4
  * Author:              Codeboxr
  * Author URI:          http://codeboxr.com/
  * Text Domain:         codeboxr-flexible-countdown
@@ -24,7 +24,7 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-define('VERSION', '1.6.3');
+define('CBXFCVERSION', '1.6.4');
 
 /*----------------------------------------------------------------------------*
  * Public-Facing Functionality

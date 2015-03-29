@@ -4,7 +4,7 @@ Donate link: http://codeboxr.com
 Tags: countdown, event, launch, countdown
 Requires at least: 3.5
 Tested up to: 4.1
-Stable tag: 1.6.3
+Stable tag: 1.6.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -58,6 +58,8 @@ This plugin shows countdown for event, launch date using various display method.
 *   Can choose background color
 *   Can choose font color
 *   Can choose circle color for days, hours minutes and seconds
+
+View Demo: http://codeboxr.com/wordpress/cbx-flexible-countdown-cbfc/
 
 == Installation ==
 
@@ -127,6 +129,9 @@ see document file given with this plugin for details shortcode and custom functi
 
 == Changelog ==
 
+= 1.6.4 =
+* Fixed bug for circular with bootstrap conflict
+* Removed general name for constant 'VERSION' and replaced with 'CBXFCVERSION'
+
 = 1.6.3 =
 * First Release
-

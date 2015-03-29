@@ -175,12 +175,12 @@ class Codeboxr_Flexible_CountDown_Admin {
 
 		$screen = get_current_screen();
         if ( $screen->id == $this->plugin_screen_hook_suffix || $screen->id == 'post'  || $screen->id == 'page' ) {
-			wp_enqueue_style( $this->plugin_slug .'-colorpicker', plugins_url( 'assets/css/colorpicker.css', __FILE__ ), false, VERSION );
+			wp_enqueue_style( $this->plugin_slug .'-colorpicker', plugins_url( 'assets/css/colorpicker.css', __FILE__ ), false, CBXFCCBXFCVERSION );
 
-			wp_enqueue_style( $this->plugin_slug .'-admin-styles', plugins_url( 'assets/css/admin.css', __FILE__ ), array( 'wp-color-picker' ), VERSION );
-			//wp_enqueue_style( $this->plugin_slug .'-admin-jquery-date-picker', '//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css', array(), VERSION );
-			wp_enqueue_style( $this->plugin_slug .'-admin-jquery-date-picker', '//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css', array(), VERSION );
-			//wp_enqueue_style( $this->plugin_slug .'-admin-jquery-date-picker', plugins_url( 'assets/css/jquery-ui.css', __FILE__ ), array(), Codeboxr_Flexible_CountDown::VERSION );
+			wp_enqueue_style( $this->plugin_slug .'-admin-styles', plugins_url( 'assets/css/admin.css', __FILE__ ), array( 'wp-color-picker' ), CBXFCCBXFCVERSION );
+			//wp_enqueue_style( $this->plugin_slug .'-admin-jquery-date-picker', '//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css', array(), CBXFCCBXFCVERSION );
+			wp_enqueue_style( $this->plugin_slug .'-admin-jquery-date-picker', '//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css', array(), CBXFCCBXFCVERSION );
+			//wp_enqueue_style( $this->plugin_slug .'-admin-jquery-date-picker', plugins_url( 'assets/css/jquery-ui.css', __FILE__ ), array(), Codeboxr_Flexible_CountDown::CBXFCCBXFCVERSION );
 		}
 
 	}
@@ -203,11 +203,11 @@ class Codeboxr_Flexible_CountDown_Admin {
 		$screen = get_current_screen();
 		if ( $screen->id == $this->plugin_screen_hook_suffix || $screen->id == 'post' || $screen->id == 'page' ) {
 
-        //wp_enqueue_script( $this->plugin_slug . '-admin-script-datepicker', plugins_url( 'assets/js/mce-button-cbfccountdown.js', __FILE__ ), array( 'jquery' ), Codeboxr_Flexible_CountDown::VERSION );
+        //wp_enqueue_script( $this->plugin_slug . '-admin-script-datepicker', plugins_url( 'assets/js/mce-button-cbfccountdown.js', __FILE__ ), array( 'jquery' ), Codeboxr_Flexible_CountDown::CBXFCCBXFCVERSION );
 
-        wp_enqueue_script( $this->plugin_slug . '-colorpicker', plugins_url( 'assets/js/colorpicker.js', __FILE__ ), array( 'jquery' ), VERSION, true );
+        wp_enqueue_script( $this->plugin_slug . '-colorpicker', plugins_url( 'assets/js/colorpicker.js', __FILE__ ), array( 'jquery' ), CBXFCVERSION, true );
 
-        wp_register_script( $this->plugin_slug . '-admin-script', plugins_url( 'assets/js/admin.js', __FILE__ ), array( 'jquery', 'jquery-ui-core', 'jquery-ui-datepicker', 'wp-color-picker' ), VERSION, true );
+        wp_register_script( $this->plugin_slug . '-admin-script', plugins_url( 'assets/js/admin.js', __FILE__ ), array( 'jquery', 'jquery-ui-core', 'jquery-ui-datepicker', 'wp-color-picker' ), CBXFCVERSION, true );
 
         wp_enqueue_script( $this->plugin_slug . '-admin-script' );
 

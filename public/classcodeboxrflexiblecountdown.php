@@ -29,7 +29,7 @@ class Codeboxr_Flexible_CountDown {
 	 *
 	 * @var     string
 	 */
-	const VERSION = VERSION;
+	const CBXFCVERSION = CBXFCVERSION;
 
 	/**
 	 *
@@ -463,11 +463,11 @@ class Codeboxr_Flexible_CountDown {
      */
     public function cbfc_enqueue_style_and_script($short_code_arr = '') {
         // Register Light Countdown css
-        wp_register_style( self::cbfc_get_text_domain() . 'cbfc-light-style', plugins_url('assets/css/cbfc-light-countdown.css', __FILE__), '', self::VERSION);
+        wp_register_style( self::cbfc_get_text_domain() . 'cbfc-light-style', plugins_url('assets/css/cbfc-light-countdown.css', __FILE__), '', self::CBXFCVERSION);
         wp_enqueue_style( self::cbfc_get_text_domain() . 'cbfc-light-style' );
 
         // Register Circular coutdown css
-        wp_register_style( $this->plugin_slug . 'cbfc-circular-css', plugins_url('assets/css/cbfc-circular-countdown.css', __FILE__), '', self::VERSION );
+        wp_register_style( $this->plugin_slug . 'cbfc-circular-css', plugins_url('assets/css/cbfc-circular-countdown.css', __FILE__), '', self::CBXFCVERSION );
         // enqueue circular style
         wp_enqueue_style( $this->plugin_slug . 'cbfc-circular-css' );
 
@@ -483,7 +483,7 @@ class Codeboxr_Flexible_CountDown {
         // Enqueue kk Countdown lib
         wp_enqueue_script( $this->plugin_slug . 'cbfc-kk-lib-js' );
         // Register Common js for calling others countdown library
-        wp_register_script( $this->plugin_slug . 'cbfc-common-js', plugins_url( 'assets/js/cbfc-common-js.js', __FILE__ ), array( 'jquery', $this->plugin_slug . 'cbfc-light-js-lib', $this->plugin_slug . 'cbfc-circular-lib-js' ), self::VERSION, true);
+        wp_register_script( $this->plugin_slug . 'cbfc-common-js', plugins_url( 'assets/js/cbfc-common-js.js', __FILE__ ), array( 'jquery', $this->plugin_slug . 'cbfc-light-js-lib', $this->plugin_slug . 'cbfc-circular-lib-js' ), self::CBXFCVERSION, true);
 
         $kkc_lang = array(
             'kkc_day'   => __( 'day', $this->plugin_slug ),
@@ -508,8 +508,8 @@ class Codeboxr_Flexible_CountDown {
 	 */
 	public static function enqueue_styles() {
 
-        wp_register_script( self::cbfc_get_text_domain() . 'cbfc-light-js-lib', plugins_url('/assets/js/jquery.light.countdown.js', __FILE__), array('jquery'), self::VERSION, true);
-        wp_register_script( self::cbfc_get_text_domain() . 'cbfc-common-js', plugins_url( '/assets/js/cbfc-common-js.js', __FILE__ ), array( 'jquery' ), self::VERSION, true);
+        wp_register_script( self::cbfc_get_text_domain() . 'cbfc-light-js-lib', plugins_url('/assets/js/jquery.light.countdown.js', __FILE__), array('jquery'), self::CBXFCVERSION, true);
+        wp_register_script( self::cbfc_get_text_domain() . 'cbfc-common-js', plugins_url( '/assets/js/cbfc-common-js.js', __FILE__ ), array( 'jquery' ), self::CBXFCVERSION, true);
 
         wp_enqueue_script( self::cbfc_get_text_domain() . 'cbfc-light-js-lib' );
         wp_enqueue_script( self::cbfc_get_text_domain() . 'cbfc-common-js' );
@@ -521,8 +521,8 @@ class Codeboxr_Flexible_CountDown {
 	 * @since    1.0.0
 	 */
 	public static function enqueue_scripts() {
-        wp_register_script( self::cbfc_get_text_domain() . 'cbfc-light-js-lib', plugins_url('assets/js/jquery.light.countdown.js', __FILE__), array('jquery'), self::VERSION, true);
-        wp_register_script( self::cbfc_get_text_domain() . 'cbfc-common-js', plugins_url( 'assets/js/cbfc-common-js.js', __FILE__ ), array( self::cbfc_get_text_domain() . 'cbfc-light-js-lib' ), self::VERSION, true);
+        wp_register_script( self::cbfc_get_text_domain() . 'cbfc-light-js-lib', plugins_url('assets/js/jquery.light.countdown.js', __FILE__), array('jquery'), self::CBXFCVERSION, true);
+        wp_register_script( self::cbfc_get_text_domain() . 'cbfc-common-js', plugins_url( 'assets/js/cbfc-common-js.js', __FILE__ ), array( self::cbfc_get_text_domain() . 'cbfc-light-js-lib' ), self::CBXFCVERSION, true);
         wp_enqueue_script( self::cbfc_get_text_domain() . 'cbfc-common-js' );
 	}
 
