@@ -175,11 +175,11 @@ class Codeboxr_Flexible_CountDown_Admin {
 
 		$screen = get_current_screen();
         if ( $screen->id == $this->plugin_screen_hook_suffix || $screen->id == 'post'  || $screen->id == 'page' ) {
-			wp_enqueue_style( $this->plugin_slug .'-colorpicker', plugins_url( 'assets/css/colorpicker.css', __FILE__ ), false, CBXFCCBXFCVERSION );
+			wp_enqueue_style( $this->plugin_slug .'-colorpicker', plugins_url( 'assets/css/colorpicker.css', __FILE__ ), false, '1.0' );
 
-			wp_enqueue_style( $this->plugin_slug .'-admin-styles', plugins_url( 'assets/css/admin.css', __FILE__ ), array( 'wp-color-picker' ), CBXFCCBXFCVERSION );
+			wp_enqueue_style( $this->plugin_slug .'-admin-styles', plugins_url( 'assets/css/admin.css', __FILE__ ), array( 'wp-color-picker' ), '1.0' );
 			//wp_enqueue_style( $this->plugin_slug .'-admin-jquery-date-picker', '//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css', array(), CBXFCCBXFCVERSION );
-			wp_enqueue_style( $this->plugin_slug .'-admin-jquery-date-picker', '//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css', array(), CBXFCCBXFCVERSION );
+			wp_enqueue_style( $this->plugin_slug .'-admin-jquery-date-picker', '//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css', array(), '1.0' );
 			//wp_enqueue_style( $this->plugin_slug .'-admin-jquery-date-picker', plugins_url( 'assets/css/jquery-ui.css', __FILE__ ), array(), Codeboxr_Flexible_CountDown::CBXFCCBXFCVERSION );
 		}
 

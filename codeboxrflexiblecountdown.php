@@ -8,9 +8,9 @@
  *
  * @wordpress-plugin
  * Plugin Name:         CBX Flexible CountDown
- * Plugin URI:          http://codeboxr.com/
+ * Plugin URI:          http://wpboxr.com/product/cbx-flexible-event-countdown-for-wordpress
  * Description:         An event countdown plugin
- * Version:             1.6.4
+ * Version:             1.6.5
  * Author:              Codeboxr
  * Author URI:          http://codeboxr.com/
  * Text Domain:         codeboxr-flexible-countdown

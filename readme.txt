@@ -1,5 +1,5 @@
 === CBX Flexible Countdown ===
-Contributors: codeboxr, manchumahara
+Contributors: codeboxr, manchumahara, wpboxr
 Donate link: http://codeboxr.com
 Tags: countdown, event, launch, countdown
 Requires at least: 3.5
@@ -60,7 +60,7 @@ This plugin shows countdown for event, launch date using various display method.
 *   Can choose circle color for days, hours minutes and seconds
 
 View Demo: http://codeboxr.com/wordpress/cbx-flexible-countdown-cbfc/
-More Details: http://codeboxr.com/product/cbx-flexible-event-countdown-for-wordpress
+More Details: http://wpboxr.com/product/cbx-flexible-event-countdown-for-wordpress
 
 == Installation ==
 

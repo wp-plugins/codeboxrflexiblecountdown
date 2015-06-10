@@ -1,10 +1,10 @@
 <?php
 /*
 * @package   Codeboxr_Flexible_CountDown
-* @author    Codeboxr <info@codeboxr.com>
+* @author    Codeboxr <info@wpboxr.com>
 * @license   GPL-2.0+
-* @link      http://codeboxr.com/
-* @copyright 2014 Codeboxr
+* @link      http://wpboxr.com/
+* @copyright Codeboxr
 */
 ?>
 <?php
