@@ -4,7 +4,7 @@ Donate link: http://codeboxr.com
 Tags: countdown, event, launch, countdown
 Requires at least: 3.5
 Tested up to: 4.1
-Stable tag: 1.6.4
+Stable tag: 1.6.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
