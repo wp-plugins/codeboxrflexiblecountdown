@@ -1,10 +1,10 @@
 <?php
 /**
- * @package   Codeboxr_Flexible_CountDown
- * @author    Codeboxr <info@codeboxr.com>
+ * @package   CBX_Flexible_CountDown
+ * @author    WPBoxr <info@wpboxr.com>
  * @license   GPL-2.0+
- * @link      http://codeboxr.com/
- * @copyright 2014 Codeboxr
+ * @link      http://wpboxr.com/
+ * @copyright 2015 WPBoxr
  */
 ?>
 <?php
@@ -337,7 +337,11 @@ class Codeboxr_Flexible_CountDown_Admin {
 	 * @return array
 	 */
 	public function cbfc_tinymce_plg( $plugins_arr ) {
-        $plugins_arr['cbfccountdown'] = plugins_url( 'assets/js/mce-button-cbfccountdown.js' , __FILE__ );
+
+		$shortcode_button_js          = plugins_url( 'assets/js/mce-button-cbfccountdown.js' , __FILE__ );
+		$shortcode_button_js          = apply_filters('codeboxrflexiblecountdown_shortcode_js', $shortcode_button_js);
+        $plugins_arr['cbfccountdown'] = $shortcode_button_js;
+
 		return $plugins_arr;
 	}
 

@@ -191,7 +191,13 @@ class Codeboxr_Flexible_CountDown {
 
         $attr = array_merge($attr, $atts);
 
-        //cbfc_get_countdown_options
+		$attr = apply_filters('cbfc_get_flexible_countdown_atts', $attr);
+
+		/*echo '<pre>';
+		print_r($attr);
+		echo '</pre>';*/
+
+		//cbfc_get_countdown_options
 
         //call a static function and pass the params $attr ,
         //from that function check the type and use if else or switch case to include necessary css or js

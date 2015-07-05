@@ -3,12 +3,12 @@ Contributors: codeboxr, manchumahara, wpboxr
 Donate link: http://codeboxr.com
 Tags: countdown, event, launch, countdown
 Requires at least: 3.5
-Tested up to: 4.1
-Stable tag: 1.6.5
+Tested up to: 4.2.2
+Stable tag: 1.7.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Codeboxr Flexible Event Countdown
+Flexible Event Countdown using different styles and 3rd party event plugin integration
 
 == Description ==
 
@@ -111,8 +111,38 @@ see document file given with this plugin for details shortcode and custom functi
 *   To get option value cbfc_get_options('option-name', 'you-tab-id' ). The second parameter default value is cbfc_general_settings
 *   To get plugin textdomain call cbfc_get_text_domain()
 
-== Frequently Asked Questions ==
+Pro Version Available:
 
+We tried to inegrate the plugin with 6 most popular event plugin to show the event count for any event date
+
+Supported Plugins:
+
+*   The Events Calendar (https://wordpress.org/plugins/the-events-calendar/) 2M+ active installs
+*   Events Manager (https://wordpress.org/plugins/events-manager/) 1M+ active installs
+*   The Events Calendar (https://wordpress.org/plugins/the-events-calendar/)
+*   My Calendar (https://wordpress.org/plugins/my-calendar/) 40k+ active installs
+*   Event Organiser (https://wordpress.org/plugins/event-organiser/) 30k+ active installs
+*   Events Made Easy (https://wordpress.org/plugins/events-made-easy/)  10k+ active installs
+
+The pro addon plugin just enhance the shortcode, widgets and direction function call. Example: pro addson shortcode
+[cbfccountdown type="kk" plugin="my-calendar" id="1"][/cbfccountdown]
+
+New Features
+
+*  Optional Event plugin selection and event id selection from widget
+*  If the pro addon plugin is active the shortcode will support two extra params(see below) as well as our direct function call will support same type param or argument extra. If the extra params plugin and id is used then it will override the provided date , hour, minute via shortcode or widget and will show from the relevent plugin as selected
+
+ [cbfccountdown type="kk" plugin="my-calendar" id="1"][/cbfccountdown]
+ 
+ plugin = 3rd party event plugin, possible values are the-events-calendar, events-manager, the-events-calendar, my-calendar ,event-organiser, events-made-easy
+ 
+
+ id = event id from the selected plugin. 
+
+
+For more details please check here http://wpboxr.com/product/cbx-flexible-event-countdown-for-wordpress
+
+== Frequently Asked Questions ==
 
 
 == Screenshots ==
@@ -129,7 +159,8 @@ see document file given with this plugin for details shortcode and custom functi
 10. widget setting
 
 == Changelog ==
-
+= 1.6.4 =
+* Fixed color chooser issue in visual shortcode popup window
 = 1.6.4 =
 * Fixed bug for circular with bootstrap conflict
 * Removed general name for constant 'VERSION' and replaced with 'CBXFCVERSION'

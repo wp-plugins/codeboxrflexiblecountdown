@@ -59,6 +59,9 @@ function cbfc_tinymce_plugin_translation($text_domain) {
         'kktextclr_label'       => __('Countdown Text Color', $text_domain),
         'kktextclr_tooltip'     => __('text color for kk countdown', $text_domain),
     );
+
+	$strings = apply_filters('codeboxrflexiblecountdown_tinymce_translation', $strings);
+
     $locale = _WP_Editors::$mce_locale;
     $translated = 'tinyMCE.addI18n("' . $locale . '.cbfccountdown", ' . json_encode( $strings ) . ");\n";
 

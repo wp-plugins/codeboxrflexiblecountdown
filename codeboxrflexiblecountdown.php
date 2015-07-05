@@ -1,17 +1,17 @@
 <?php
 /**
- * @package   Codeboxr_Flexible_CountDown
- * @author    Codeboxr <info@codeboxr.com>
+ * @package   CBX Flexible CountDown
+ * @author    Codeboxr <info@wpboxr.com>
  * @license   GPL-2.0+
- * @link      http://codeboxr.com/
- * @copyright 2015 Codeboxr
+ * @link      http://wpboxr.com/
+ * @copyright 2015 WPBoxr
  *
  * @wordpress-plugin
  * Plugin Name:         CBX Flexible CountDown
  * Plugin URI:          http://wpboxr.com/product/cbx-flexible-event-countdown-for-wordpress
  * Description:         An event countdown plugin
- * Version:             1.6.5
- * Author:              Codeboxr
+ * Version:             1.7.1
+ * Author:              WPBoxr
  * Author URI:          http://codeboxr.com/
  * Text Domain:         codeboxr-flexible-countdown
  * License:             GPL-2.0+
@@ -24,7 +24,7 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-define('CBXFCVERSION', '1.6.4');
+define('CBXFCVERSION', '1.7.1');
 
 /*----------------------------------------------------------------------------*
  * Public-Facing Functionality

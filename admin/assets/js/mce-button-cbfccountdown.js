@@ -266,6 +266,7 @@
                         jQuery( '#mceu_' + dateInputId ).datepicker();
                     }
 
+                    /*
                     for ( var i = 6; i <= 20; i++ ) {
                         var inputIdNum = ( parentIdNum + i );
                         if ( jQuery( '#mceu_' +  inputIdNum ).length ) {
@@ -301,11 +302,12 @@
                             } );
                         }
                     }
+                    */
                 },
 
 				onsubmit: function( e ) {
                     
-                    jQuery( '.colorpicker' ).hide();
+                    //jQuery( '.colorpicker' ).hide();
 					var shortcode_str = '[' + sh_tag + ' type="'+e.data.type+'"';
 
                     //if set date insert to shortcode
@@ -386,7 +388,7 @@
 				},
 
                 onClose: function(w) {
-                    jQuery( '.colorpicker' ).hide();
+                    //jQuery( '.colorpicker' ).hide();
                 }
                 //autoScroll: true,
                 //width:500,

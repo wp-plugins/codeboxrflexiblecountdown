@@ -170,6 +170,8 @@ class CodeboxrFlexibleCountdownWidget extends WP_Widget {
         $instance['cbfc_date'] = strip_tags( $new_instance['cbfc_date'] );
         $instance['cbfc_hour'] = (int) strip_tags( $new_instance['cbfc_hour'] );
         $instance['cbfc_min'] = (int) strip_tags( $new_instance['cbfc_min'] );
+
+		$instance              = apply_filters('cbxflexiblecountdownwidgetupdate', $instance, $new_instance, $old_instance);
         //$instance['show_date'] = isset( $new_instance['show_date'] ) ? (bool) $new_instance['show_date'] : false;
         $this->flush_widget_cache();
 

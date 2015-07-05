@@ -41,6 +41,6 @@
     <label for="<?php echo $this->get_field_id( 'cbfc_min' ); ?>"><?php _e( 'Launch Minute:', $this->get_widget_slug() ); ?></label>
     <input class="widefat" id="<?php echo $this->get_field_id( 'cbfc_min' ); ?>" name="<?php echo $this->get_field_name( 'cbfc_min' ); ?>" type="text" value="<?php echo $cbfc_min; ?>" />
 </p>
-
-<p>
-</p>
+<?php
+ do_action('cbxflexiblecountdownwidgetform', $this, $instance);
+?>

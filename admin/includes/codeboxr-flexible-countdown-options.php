@@ -26,8 +26,8 @@ if(!function_exists('cbfc_get_section_setting')) {
     function cbfc_get_section_setting($text_domain) {
         $sections = array(
             array(
-                'id' => 'cbfc_general_settings',
-                'title' => __( 'General Settings', $text_domain )
+                'id'        => 'cbfc_general_settings',
+                'title'     => __( 'General Settings', $text_domain )
             ),
         );
 
